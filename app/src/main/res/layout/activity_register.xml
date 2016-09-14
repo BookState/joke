@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tj.uimading.utils.RegisterActivity"
+    android:layout_marginTop="80dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="欢迎您进入注册页面"
+        android:id="@+id/textView"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="请输入您的姓名..."
+        android:ems="10"
+        android:id="@+id/et_rname"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="请输入您的密码..."
+        android:ems="10"
+        android:id="@+id/et_rpwd"
+        android:layout_below="@+id/et_rname"
+        android:layout_alignLeft="@+id/et_rname"
+        android:layout_alignStart="@+id/et_rname"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/btn_rlogin"
+        android:background="#33CB98"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/et_rpwd"
+        android:layout_alignStart="@+id/et_rpwd"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/btn_rcancel"
+        android:background="#33CB98"
+        android:layout_alignTop="@+id/btn_rlogin"
+        android:layout_alignRight="@+id/et_rpwd"
+        android:layout_alignEnd="@+id/et_rpwd"/>
+
+</RelativeLayout>

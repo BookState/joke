@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tj.uimading.NewsActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        ></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_four"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@mipmap/bottom_tab_bg"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/RidioStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/home"
+            android:text="@string/home"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_smartservice"
+            style="@style/RidioStyle"
+            android:drawableTop="@drawable/smartservice"
+            android:text="@string/smartservice"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            style="@style/RidioStyle"
+            android:drawableTop="@drawable/gov"
+            android:text="@string/gov"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/RidioStyle"
+            android:drawableTop="@drawable/setting"
+            android:text="@string/setting"
+            />
+    </RadioGroup>
+
+</LinearLayout>
